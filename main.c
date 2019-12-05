@@ -6,7 +6,7 @@
 /*   By: knarwhal <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/26 18:29:12 by knarwhal          #+#    #+#             */
-/*   Updated: 2019/12/01 16:37:30 by knarwhal         ###   ########.fr       */
+/*   Updated: 2019/12/04 15:57:36 by knarwhal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,9 +27,10 @@ int		checktouches(*char buf)
 				buf[i + 1] == '#' ? count++ : 0;
 			if (i >= 5)
 				buf[i - 5] == '#' ? count++ : 0;
-			it (i <= 13)
+			if (i <= 13)
 				buf[i + 5] == '#' ? count++ : 0;
 		}
+		i++;
 	}
 	if (count > 5)
 		return (1);
@@ -109,6 +110,6 @@ int		main(int argc, **char argv)
 	}
 	else
 		solve(arv[1]);
-	return (1);
+	return (0);
 }
 
