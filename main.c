@@ -104,12 +104,12 @@ int		main(int argc, char **argv)
 	
 	if (argc != 2)
 	{
-		ft_putstr("usage: ./fillit source_file\n");
+		write(1,"usage: ./fillit source_file\n",28);
 		return (0);
 	}
 	if (!(test = parse(argv[1])))
 	{
-		ft_putstr("error\n");
+		write(1,"error\n",6);
 		return (0);
 	}
 	else
