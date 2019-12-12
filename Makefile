@@ -5,8 +5,8 @@
 #                                                     +:+ +:+         +:+      #
 #    By: knarwhal <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2019/09/19 23:00:02 by knarwhal          #+#    #+#              #
-#    Updated: 2019/09/19 23:03:33 by knarwhal         ###   ########.fr        #
+#    Created: 2019/10/12 18:00:02 by knarwhal          #+#    #+#              #
+#    Updated: 2019/10/12 18:53:33 by knarwhal         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,11 +15,11 @@ NAME = fillit
 # compilation flags
 FLAGS = -Wall -Wextra -Werror
 # source files
-SRCS = $(wildcard *.c)
+SRCS = $(wildcard proj_fillit/*.c)
 # object files
-OBJS = $(wildcard *.o)
+OBJS = $(wildcard proj_fillit/*.o)
 # headers
-HDRS = $(wildcard *.h)
+HDRS = $(wildcard proj_fillit/*.h)
 # libft
 LIB = ./libft/libft.a
 
